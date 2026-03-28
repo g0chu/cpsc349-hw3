@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+}
+
+h1 {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 24px;
+  margin: 0;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  background: #3d5166;
+}
+
+#searchInput {
+  padding: 8px 12px;
+  width: 260px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#sortSelect {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 2px solid #2980b9;
+  border-radius: 4px;
+}
+
+#movieGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1300px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+.movie-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.movie-card img {
+  width: 100%;
+  display: block;
+}
+
+.movie-card .info {
+  padding: 12px;
+  text-align: center;
+}
+
+.movie-card .title {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.movie-card .meta {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+#pagination button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#pagination button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
